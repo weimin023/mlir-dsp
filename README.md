@@ -1,6 +1,6 @@
 # MLIR-DSP
 DSP pipeline with MLIR
 
-.
-├── llvm-project
+. \
+├── llvm-project \
 └── mlir-dsp
