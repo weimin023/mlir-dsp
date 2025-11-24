@@ -36,6 +36,7 @@ include_directories(
 )
 add_subdirectory(include/mlir-dsp)
 add_subdirectory(lib)
+add_subdirectory(test)
 
 add_executable(mlir-dsp main.cpp)
 add_dependencies(mlir-dsp MLIRDSPIncGen)
