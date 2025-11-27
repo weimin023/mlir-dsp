@@ -1,10 +1,15 @@
 set -ex
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-LLVM_BIN_DIR=$SCRIPT_DIR/../../llvm-project/build/bin
+LLVM_BIN_DIR=$SCRIPT_DIR/../../../llvm-project/build/bin
 
 $LLVM_BIN_DIR/mlir-opt \
-    $SCRIPT_DIR/tensor.mlir \
+    $SCRIPT_DIR/tensor_padding.mlir \
+    -canonicalize \
+    -o $SCRIPT_DIR/toBeforeBufferizeMemref.mlir
+
+$LLVM_BIN_DIR/mlir-opt \
+    $SCRIPT_DIR/toBeforeBufferizeMemref.mlir \
     -one-shot-bufferize="bufferize-function-boundaries=true" \
     -canonicalize \
     -o $SCRIPT_DIR/toMemref.mlir

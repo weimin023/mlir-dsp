@@ -10,14 +10,6 @@ struct MemRefDescriptor1D {
 };
 
 extern "C" {
-    extern int add(int a,int b);
-
-    extern int sub(int a,int b);
-
-    extern int mul(int a,int b);
-
-    extern int my_div(int a,int b);
-
     // padding1d function from tensor.mlir
     // Takes input memref and target length, returns padded memref
     extern MemRefDescriptor1D<float> padding1d(
