@@ -1,0 +1,72 @@
+desc: --massif-out-file=massif.1.buffer_reuse.%p
+cmd: ./1.buffer_reuse
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=177398
+mem_heap_B=40000
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=307447
+mem_heap_B=100000
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=487534
+mem_heap_B=160064
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=692717
+mem_heap_B=160064
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=peak
+n3: 160064 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 60064 0x10996E: dynamic_padding_and_mul_filter_auto_reuse (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/1.buffer_reuse)
+  n0: 60064 0x1095A7: main (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/1.buffer_reuse)
+ n0: 60000 0x1094A9: main (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/1.buffer_reuse)
+ n0: 40000 0x10941E: main (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/1.buffer_reuse)
+#-----------
+snapshot=5
+#-----------
+time=692717
+mem_heap_B=120064
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=692748
+mem_heap_B=60064
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=692779
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

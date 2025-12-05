@@ -1,0 +1,1 @@
+valgrind --tool=massif --massif-out-file=massif.0.baseline_cuda.%p ./0.baseline_cuda

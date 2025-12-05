@@ -1,0 +1,1 @@
+gcc 0.baseline_cuda.cpp -o 0.baseline_cuda

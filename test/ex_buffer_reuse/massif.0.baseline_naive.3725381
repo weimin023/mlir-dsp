@@ -1,0 +1,90 @@
+desc: --massif-out-file=massif.0.baseline_naive.%p
+cmd: ./0.baseline_naive
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=176042
+mem_heap_B=40000
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=296087
+mem_heap_B=100000
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=461145
+mem_heap_B=160000
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=731207
+mem_heap_B=220000
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1076267
+mem_heap_B=220000
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=peak
+n4: 220000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 60000 0x109429: padding1d_naive(float*, int, int) (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/0.baseline_naive)
+  n0: 60000 0x1096BB: main (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/0.baseline_naive)
+ n1: 60000 0x1094C6: elementwise_mul_naive(float*, float*, int) (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/0.baseline_naive)
+  n0: 60000 0x1096DB: main (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/0.baseline_naive)
+ n0: 60000 0x109650: main (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/0.baseline_naive)
+ n0: 40000 0x1095EA: main (in /home/weimin.chen/Desktop/mlir_proj/mlir-dsp/test/ex_buffer_reuse/0.baseline_naive)
+#-----------
+snapshot=6
+#-----------
+time=1076267
+mem_heap_B=180000
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1076299
+mem_heap_B=120000
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1076331
+mem_heap_B=60000
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1076363
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
